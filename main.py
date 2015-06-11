@@ -10,9 +10,17 @@ def home():
     # return "Hello, World!"  # return a string
     return render_template('index.html')  # render a template
 
-@app.route('/welcome')
-def welcome():
-    return render_template('welcome.html')  # render a template
+@app.route('/about')
+def about():
+    return render_template('about.html')  # render a template
+
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')  # render a template
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')  # render a template
 
 # start the server with the 'run()' method
 if __name__ == '__main__':
